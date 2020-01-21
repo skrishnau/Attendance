@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvStdClassInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="classInfo"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@color/blue_for_page_background"
+        android:padding="1dp"
+       >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@android:color/white"
+        
+       >
+
+        <EditText
+            android:id="@+id/etCrn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="CRN"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="4dp"
+            android:typeface="monospace" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.89"
+            android:ems="10"
+            android:hint="Name"
+			android:textColor="@android:color/black"            
+            android:inputType="textCapWords"
+            android:typeface="monospace" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="4dp" 
+        android:background="@color/blue_for_page_background" >
+
+        <Button
+            android:id="@+id/importStudentButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:onClick="ImportStudents"
+            android:typeface="monospace"
+            android:background="@drawable/grey_button_drawable"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:text="Import" />
+
+        <!--
+             <View
+            android:id="@+id/view1"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_weight="3" />
+        -->
+
+        <TextView
+            android:id="@+id/addStdTotalStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text=" "
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/SaveStudentButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:onClick="SaveStdInfo"
+            android:text="Save"
+            android:background="@drawable/blue_drawable"
+            android:textSize="17sp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlue"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        >
+
+        <TextView
+            android:id="@+id/tvShowCrn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:paddingLeft="5dp"
+            android:text="Crn"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tvShowName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="0.89"
+            android:paddingLeft="3dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/allStdlv"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.87"
+            android:scrollbars="vertical"
+            android:background="@color/LT_GRAY"
+            >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/smokeWhite" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

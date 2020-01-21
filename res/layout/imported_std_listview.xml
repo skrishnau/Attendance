@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:textColor="@android:color/black"
+        android:background="@color/blue_for_page_background"
+        android:text="Names found in the file..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/smokeWhite" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:paddingLeft="2dp"
+            android:text="CRN"
+            android:textColor="@color/smokeDark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.30"
+            android:text="Name"
+            android:textColor="@color/smokeDark"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/importedStdListViewlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_for_page_background" >
+        
+        <TextView
+            android:id="@+id/totalImportedStdsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.44"
+            android:text="Name"
+            
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>

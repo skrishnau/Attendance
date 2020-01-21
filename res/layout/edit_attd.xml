@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/dark_black">
+<LinearLayout 
+   	 android:layout_width="match_parent"
+   	 android:layout_height="wrap_content"
+   	 android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Year"
+        android:textColor="@color/white" />
+
+	  <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Month"
+        android:layout_weight="1"
+        android:textColor="@color/white" />
+      <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Day"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+         />
+	  
+       
+    </LinearLayout>
+    <LinearLayout 
+   	 android:layout_width="match_parent"
+   	 android:layout_height="wrap_content"
+   	 android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+         </EditText>
+       
+
+    <EditText
+        android:id="@+id/etMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight="1"
+        android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:inputType="date" >
+
+            
+            
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout 
+   	 android:layout_width="match_parent"
+   	 android:layout_height="wrap_content"
+   	 android:orientation="horizontal"
+   	 android:layout_marginTop="10dp" >
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Hour"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+         />
+	  <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Minute"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+         />
+      <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Second"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+         />
+	  
+       
+    </LinearLayout>
+    
+        <LinearLayout 
+   	 android:layout_width="match_parent"
+   	 android:layout_height="wrap_content"
+   	 android:orientation="horizontal" >
+    <EditText
+        android:id="@+id/etHour"
+       
+        
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/etMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight="1"
+        android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:inputType="date"
+            android:layout_marginRight="5dp" >
+
+            
+            
+        </EditText>
+    </LinearLayout>
+    
+</LinearLayout>
+    
+
+

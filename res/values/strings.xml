@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"></string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="in_percent_text"> In %   ↓ </string>
+    <string name="in_days_text"> In days ↓ </string>
+
+    <string-array name="menu_array"></string-array>
+    <string-array name="program_array">
+        <item>"Architecture"</item>
+        <item>"Civil"</item>
+        <item>"Civil n Rural"</item>
+        <item>"Computer"</item>
+        <item>"Electrical"</item>
+        <item>"Electrical n Electronics"</item>
+        <item>"Electronics"</item>
+    </string-array>
+
+    <string name="title_activity_view_students_total_attendance">ViewStudentsTotalAttendance</string>
+    <string name="title_activity_view_students">ViewStudents</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
